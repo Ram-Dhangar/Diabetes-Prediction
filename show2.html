@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Diabetes Detector!</title>
+    <style>
+      p{background-image:url(img/main.jpg);
+         background-size: cover;}
+    </style>
+    
+  </head>
+  <body style="background-color: rgb(165, 131, 245);">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: turquoise;">Diabetes Detector!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="color: darkorange;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: darkorange;">Log-In</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: darkorange;">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: darkorange;">Contact Us</a>
+            </li>
+            
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+ 
+<div class="container">
+    <h1 class ="text-center mt=20 bg-warning" style="color: rgba(12, 11, 11, 0.952);
+    font-size: 40px; font-family: Georgia, 'Times New Roman', Times, serif ;">Welcome to Diabetes Prediction System</h1>
+       <h2 class style="color: rgb(102, 24, 24);">Patient Diabetes probability is :{{dia}}</h2>
+      {% if dia >100 %}
+      <P style="font-size: 23px;">The Diabetes Detector System Predicted <br>
+      Your Report is :-</P>
+      <h3 style="color: darkblue; font-size: 23px;">High Diabetes!!!</h3>
+      <p>Don't Worry we will help you to recoverd your Diabetes<br>
+      This is not biggest problem if you follow advised of good doctor<br>
+    It's only take six month to recoverd it.<br>
+    Your information recorded successfully!!!<br>
+    We will Provid you complete Guidline about it<br>
+  Thank You For Using Our System!!!</p>
+        
+      {% elif dia>50 %}
+      <P style="font-size: 23px;">The Diabetes Detector System Predicted <br>
+        Your Report is :-</P>
+      <h3 style="color:aquamarine; font-size: 23px;">PRE Diabetes!!!</h3>
+      <p>Don't Worry we will help you to recoverd your Diabetes<br>
+        This is not biggest problem if you follow advised of good doctor<br>
+      It's only take one month to recoverd it.<br>
+      Your information recorded successfully!!!<br>
+      We will Provid you complete Guidline about it<br>
+    Thank You For Using Our System!!!</p></p>
+          
+
+      {% else %}
+      <P style="font-size: 23px;">The Diabetes Detector System Predicted <br>
+        Your Report is :-</P>
+      <h3 style="color: green;"> NON Diabetes!!!</h3>
+  
+      <p style="font-size: 23px; font-size: 23px;"> 
+        You are Healthy,Fit and Fine!!!<br>
+        Thank You for useing Diabetes Prediction System.<br>
+        Take Care Yourself Life is not once more!!!
+      </p>
+        
+      {% endif %}
+
+      
+        
+      
+      <div>
+      
+       <a href="/">
+       <button class="btn btn-success" type="submit">Go Back</button>
+      </a>
+      </div>
+
+      <footer class="bg-secondary text-white text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4 mt=10">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase" style="margin-left: 40px;">ABOUNTS SYSTEM</h5>
+      
+              <p style="font-size: 17px;">
+                welcome to Diabetes Prediction system this is platform<br> for Everyone who
+        want to check itself possibility<br> of Diabetes
+        Without paying any Fees this is free of cost<br> available for every indian citisen.
+        Lets check Yourself !
+
+              </p>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Devloper Moduls</h5>
+      
+              <ul>
+                <li>
+                  Python Programming.
+                </li>
+                <li>
+                  Machine Learning.
+                </li>
+                <li>
+                  Flask API.
+                </li>
+                <li>
+                  Python Libraries.
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-0">Connect Us:-</h5>
+      
+              <ul>
+                <li>
+                  Developed by Ram Dhanagr.
+                </li>
+                <li>
+                   harshalsd90@gmail.com
+                </li>
+                <li>
+                  Linkdin:-Ramkrushna Dhanagr.
+                </li>
+                <li>
+                  YouTuble:-Ram Dhanagar.
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2021 Copyright:-
+          <a class="text-white" href="https://mdbootstrap.com/">Design by Ramkrushna Dhnagar</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+      </body>
+      </html>
